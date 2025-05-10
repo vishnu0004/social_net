@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1B;
+    color: white;
+    height: 100vh;
+}
+
+/* Body Styling */
+.profile-container {
+    
+    /* Dark background */
+   
+    /* White text */
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Profile Container */
+.main-d {
+    background-color: #2C2F33;
+    /* Slightly lighter gray for container */
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 70%;
+
+}
+
+/* Header Section */
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #007BFF;
+    /* Blue border for profile picture */
+    margin-bottom: 15px;
+    background-color: white;
+    width: 150px;
+    /* Adjust the size as needed */
+    height: 150px;
+    /* Make it a square */
+    border-radius: 50%;
+    /* Makes the box circular */
+    overflow: hidden;
+    /* Ensures the image fits within the rounded box */
+    display: flex;
+    align-items: center;
+    /* Center the image vertically */
+    justify-content: center;
+    /* Center the image horizontally */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Optional: Adds a shadow for a 3D effect */
+    margin: auto;
+}
+
+.profile-pic img {
+    width: 100%;
+    /* Ensures the image covers the container */
+    height: 100%;
+    /* Ensures the image covers the container */
+    object-fit: cover;
+    /* Keeps the aspect ratio of the image */
+    border-radius: 50%;
+    /* Matches the container's rounded shape */
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #D7DADC;
+    /* Lighter gray for bio text */
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.stats span {
+    color: white;
+}
+
+.edit-profile-btn {
+    background-color: #007BFF;
+    /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Posts Section */
+.posts-section {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.posts-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Posts Grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.post {
+    width: 90%;
+    padding-top: 90%;
+    /* Makes square aspect ratio */
+    position: relative;
+    background-color: #1A1A1B;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.post p {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.post img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.post:hover img {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+.upload-post-btn {
+    background-color: #007BFF;
+    /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.upload-post-btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+
+/* Like and Comment Buttons */
+.like-btn,
+.comment-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.like-btn:hover,
+.comment-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Comment Form */
+textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #D7DADC;
+    background-color: #2C2F33;
+    color: white;
+    margin-bottom: 5px;
+    resize: none;
+}
+
+.comment-list p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #D7DADC;
+}
+
+

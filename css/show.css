@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1B;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100vh;
+} 
+
+
+/* Container for the entire post details layout */
+.post-details-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #2C2F33;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+/* Left Section: Image and Post Info */
+.left-section {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ddd;
+}
+
+.post-image-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.post-info {
+    text-align: center;
+}
+
+.description {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.likes {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #007BFF;
+}
+
+.like-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.like-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Right Section: Comments */
+.right-section {
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #3d4651;
+    border-radius: 10px;
+}
+
+.comment-form textarea {
+    width: 97%;
+    height: 60px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    color: white;
+    background-color: #1A1A1B;
+}
+
+.comment-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.comment-btn:hover {
+    background-color: #218838;
+}
+
+.comment-list {
+    background-color: #3d4651;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-list h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.comment-list p {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.5;
+    color: white;
+}
+
+.comment-list p strong {
+    color: #007BFF;
+}

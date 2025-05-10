@@ -1,0 +1,104 @@
+
+/* .navbar .navbar-container{
+    display: flex;
+    background-color: #1A1A1B; 
+    color: rgb(0, 0, 0);
+    height: 80px;
+} */
+
+
+
+/* Navbar Styles */
+.navba {
+    background-color: #1A1A1B; 
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: red;
+    
+}
+
+.navba-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navba-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.navba-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: space-evenly; 
+}
+
+.navba-links li {
+    margin: 0 15px; 
+}
+
+.navba-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem; 
+    transition: color 0.3s;
+}
+
+.navba-links a:hover {
+    color: #f0f2f5; 
+}
+
+
+.searc-form {
+    display: flex;
+    align-items: center;
+}
+
+.searc-form input {
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.searc-form button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #f0a50e;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.searc-form button:hover {
+    background-color: #c17707;
+}
+
+
+.profil {
+    display: flex;
+    align-items: center;
+}
+
+.profil-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
